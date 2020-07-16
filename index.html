@@ -1,226 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap style sheet must link prior to our style sheet link -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <link rel="stylesheet" ref="text/css" href="./css/main.css">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jeff Richardson</title>
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
-  <!-- Copied this from bootstrap within Components / Navbar -->
+    <!-- #####################  NAVBAR  ######################### -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span> -->
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#homeAnchor">JR <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#portfolioAnchor">Portfolio</a>
-        <a class="nav-item nav-link" href="#aboutAnchor">About</a>
-        <a class="nav-item nav-link" href="#contactAnchor">Contact</a>
-        <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-      </div>
-    </div>
-  </nav>
-
-
-  <a name="homeAnchor"></a>
-
-  <!-- HEADER -->
-  <!-- Components / Jumbotron > Fluid Jumbotron -->
-
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Jeff Richardson</h1>
-      <p class="lead">Javascript Web Development Student</p>
-    </div>
-  </div>
-
-
-  <a name="portfolioAnchor"></a>
-
-  <!-- ****************  START CARDS **************************-->
-
-  <!-- Tabs with pills around cards -->
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-        aria-controls="pills-home" aria-selected="true">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-        aria-controls="pills-profile" aria-selected="false">Practice Assignments</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-        aria-controls="pills-contact" aria-selected="false">Repls</a>
-    </li>
-  </ul>
-  <!-- END of TAB Definitions-->
-
-  <!-- *********************** PILLS HOME *******************-->
-  <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-      <!-- NEED THIS AT BEGINNING OF CARD GROUP - SETS COLUMNS -->
-      <!-- <div class="row row-cols-1 row-cols-md-3"> -->
-      <div class="row row-cols-1 row-cols-sm-4">
-
-        <!-- CARD START -->
-        <div class="col mb-4">
-          <div class="card h-100">
-            <!-- <a href="https://jr-songsterrapi.firebaseapp.com" target=blank> -->
-              <img src="assets/API-Songsterr.jpg" class="card-img-top" alt="...">
-            <!-- </a> -->
-            <div class="card-body">
-              <h5 class="card-title">API</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-                <a href="https://jr-songsterrapi.firebaseapp.com" class="card-link">Songsterr API</a>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-
-
-        <!-- CARD START -->
-        <div class="col mb-4">
-          <div class="card h-100">
-              <img src="assets/cssCreature.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">CSS Creature</h5>
-                <p class="card-text">Used codepen to create a creature using HTML and CSS. </p>
-                <a href="https://JeffRichardson1150.github.io/cssCreature" class="card-link">CSS Creature</a>
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Jeff Richardson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactAnchor">Contact Me</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
               </div>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
         </div>
-        <!-- CARD END -->
+      </nav>
 
+    <!-- #####################  JUMBOTRON  ######################### -->
 
-        <!-- CARD START -->
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="assets/staticLayout.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Static Layout - Netflix</h5>
-              <p class="card-text">This is a short card.</p>
-              <a href="https://JeffRichardson1150.github.io/staticLayout" class="card-link">Static Layout</a>
+      <div class="jumbotron jumbotron-fluid">
+        <div class= "overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/myPic.jpg" alt="my pic" height="300" width="300" style="border-radius:50%" class="responsive">
+            </div>
+        
+              <div class="col">
+                <div class="myPic">
+        
+                </div>
+              </div>
+            <div class="col">
+              <h1 class="myName">Jeff Richardson</h1>
+              <p class="jobTitle">Javascript Full Stack Web Developer</p>
             </div>
           </div>
         </div>
-        <!-- CARD END -->
-
-        <!-- CARD START -->
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="assets/htmlTags.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HTML Tags - Being Jeff</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-            </div>
-          </div>
+        <!-- <div class = myPic></div> -->
         </div>
-        <!-- CARD END -->
+        
 
-      </div>
+        <a name="aboutMe"></a>
+    <!-- #####################  GRID  ######################### -->
+
+    <div class="section-heading">
+        <div class="heading-text">
+            <p>About Me</p>
+        </div>
     </div>
 
-    <!-- *********************** PILLS PROFILE *******************-->
+    <div class="portfolio-grid-wrapper">
 
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-      <!-- CARDS GO HERE -->
-
-      <!-- NEED THIS AT BEGINNING OF CARD GROUP - SETS COLUMNS -->
-      <div class="row row-cols-1 row-cols-md-3">
-
-        <!-- CARD START -->
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="assets/cssBasics.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CSS Basics - Bang a Drum</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+        <div class="about-me">
+            <div class="aboutMe-box">
+                <h3>Diverse experience</h3>
             </div>
-          </div>
         </div>
-        <!-- CARD END -->
-        <!-- CARD START -->
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="assets/terminalDungeon.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Terminal Dungeon - Command Line Maze</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+        
+        <div class="resume" >
+            <div class="resume-box">
+                <img src="assets/Resume.jpg" />
+
             </div>
-          </div>
         </div>
-        <!-- CARD END -->
 
-      </div>
-
-      <!-- *********************** PILLS CONTACT *******************-->
-
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
     </div>
 
-    <!-- Cards in rows -->
 
+    <a name="projects"></a>
+      <!-- #####################  CAROUSEL  ######################### -->
+    <div class="section-heading">
+        <div class="heading-text">
+            <p>Projects</p>
+        </div>
+    </div>
 
-    <!-- ************************  END CARDS *************************-->
-
-    <!-- PROJECTS -->
-    <!-- <section id="projects">
-            <h1 class="projectsHeader" style="text-align: center;">Projects</h1> -->
-
-    <!-- From bootstrap   Layout/Grid -->
-    <!--
-            <div class="container">   <!-- must be "container"
-                <div class="row">  <!-- must be "row" -->
-    <!-- there are a maximum of 12 grids-->
-    <!-- the divs below specify their share of the 12 grids (col-n) - total must be 12 -->
-    <!--            <div class="col-5">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="cards-horizontal">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/staticLayout.jpg" class="card-img-top" alt="Netflix reproduction">
+                        <div class="card-body">
+                        <h5 class="card-title">Netflix Copy</h5>
+                        <p class="card-text">A reproduction of the Netflix page.</p>
+                        <a href="#" class="btn btn-primary">WD Static Layout</a>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/Survive2020.jpg" class="card-img-top" alt="Survive2020">
+                        <div class="card-body">
+                        <h5 class="card-title">Survive2020</h5>
+                        <p class="card-text">A static webpage.</p>
+                        <a href="#" class="btn btn-primary">SD Static Layout</a>
+                        </div>
                     </div>
-                    <div class="col-5">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                    <div class="card" >
+                        <img src="./assets/cssCreature.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">WD CSS Creature</h5>
+                        <p class="card-text">An imagined creature created with CSS. Web Development Bootcamp</p>
+                        <a href="#" class="btn btn-primary">CSS Creature</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                -->
+            </div>
+
+            <div class="carousel-item">
+                <div id="cards-horizontal">
+                    <div class="card" style="width: 18rem; background-color: lightblue;">
+                        <img src="./assets/cssCreature.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SD CSS Creature</h5>
+                            <p class="card-text">An imagined creature created with CSS. Software Development Bootcamp</p>
+                            <a href="#" class="btn btn-primary">CSS Creature</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/API-Songsterr.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/API-Songsterr.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div> 
-          -->
-    </section>
-
-    <a name="aboutAnchor"></a>
-
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h1 class="aboutHeader" style="text-align: center;">About</h1>
-      <p style="text-align: center;">This section will contain information about me</p>
-
+            </div>
+            <div class="carousel-item">
+                <div id="cards-horizontal">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/API-Songsterr.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="width: 18rem; background-color: lightblue;">
+                        <img src="./assets//cssCreature.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/API-Songsterr.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
       <a name="contactAnchor"></a>
+    <!-- #####################  CONTACT  ######################### -->
 
-      <!-- CONTACT -->
+
       <section id="contact">
         <div class="container">
           <br>
@@ -265,18 +278,24 @@
         </div>
       </section>
 
-      <!-- FOOTER -->
+      <footer>
 
-      <!-- Bootstrap JavaScript components - jQuery, Popper.js, and Bootstrap plugins -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+		<div class="copyRight">
+			<p>© 2020 JeffRichardson | All rights reserved | Website by Foray Solutions</p>
+			<p>
+				<a href="#">About</a> | 
+				<a href="#">Privacy Policy</a> | 
+				<a href="#">Contact Us</a>
+			</p>
+		</div>
+
+	</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
-
 </html>

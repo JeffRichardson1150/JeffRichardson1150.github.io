@@ -1,6 +1,85 @@
 .jumbotron {
-    background: url(../assets/worldsCollide.jpg) center bottom;
+    background: url(../assets/desk10.jpg) fixed bottom;
     color: whitesmoke;
     background-size: cover;
-    height: 60vh;
+    /* opacity: 0.8; */
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+    z-index: -2;
 }
+
+.overlay {
+    background-color: #000;
+    /* opacity: 0; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+.myPic {
+    background: url(../assets/myPic.jpg) fixed bottom;
+    /* background: url("./assets/myPic.jpg"); */
+    height: 45vh; 
+    width: 20vw; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 46% 30%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 22%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.jumboContainer {
+    /* background: fixed; */
+    text-align: right;
+    right: 2em;
+    top: 2em;
+    color: purple;
+    position: absolute;
+    /* z-index: -1 */
+  }
+   
+.jumboImage {
+    position: absolute;
+    top: 4em;
+    left: 4em;
+}
+.overlay {
+    background-color: #000;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+.myName {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: red;
+}
+
+.jobTitle {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: red;
+}
+
+.myPicCircle {
+    background-image: url('../assets/myPic.jpg'); */
+    position: absolute;
+    background-color: blue;
+    height: 30em;
+    width: 30em;
+    left: 7em;
+    top: 5em;
+    border-radius: 50%;
+  }
